@@ -20,7 +20,6 @@
       if($count == 1) {
          //session_register("myusername");
         $_SESSION['login_user'] = $myusername;
-        echo "ahoj";
         header("location: welcome.php");
       }else {
         $error = "Your Login Name or Password is invalid";
@@ -31,7 +30,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>Ethernet 16 Relay Control</title>
 <style>
 .login{
 width:360px;
@@ -70,7 +69,7 @@ margin-bottom:15px;
 <form action="" method="post" style="text-align:center;">
 <input type = "text" name = "username" class = "box"/><br /><br />
 <input type = "password" name = "password" class = "box" /><br/><br />
-<input type = "submit" value = " Submit "/><br />
+<input type = "submit" value = " Login "/><br />
 </form>
 <!-- Error Message -->
 <span><?php echo $error; ?></span>
