@@ -55,7 +55,7 @@ border-radius:50px;
 margin-bottom:15px; 
 }
 </style>
-   <body style="background-color:#000;">
+   <body background="background.jpg">
         <form action="" method="post" style="text-align:center;">
         <h1 style="color:#fff;">Welcome in administration<?php echo $login_session; ?></h1>
         <div class="login">

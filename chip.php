@@ -84,7 +84,7 @@ margin-bottom:5px;
 }
 </style>
 </head>
-   <body style="background-color:#000;">
+  <body background="background.jpg">
         <form action="" method="post" style="text-align:center;">
         <h1 style="color:#0f0;">Welcome in change IP adress<?php echo $login_session; ?><br />
 		<div class="login">
