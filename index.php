@@ -39,10 +39,9 @@ font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", seri
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
-padding:1px 20px 1px;
+padding:1px 100px 1px;
 display:inline-block;
 position: relative;
-float:left;
 }
 .login{
 background-color:#000;
@@ -57,6 +56,7 @@ display:inline-block;
 position: relative;
 float:left;
 width: calc(25% - 10px);
+height: 450px;
 }
 input[type=text], input[type=password]{
 width:99%;
