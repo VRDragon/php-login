@@ -34,7 +34,7 @@ font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", seri
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
-padding:1px 50px 1px;
+padding:1px 1px 1px;
 }
 .login{
 margin: calc(0%);
@@ -117,7 +117,7 @@ color:#0f0;
 	echo("<div class='login'>");
 	}
 	if ($i == 8){
-	echo("</div>");	
+	echo("</div>");
 	echo("<div class='login'>");
 	}
 		if ($val_array[$i][0] == 0 ) {
