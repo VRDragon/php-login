@@ -133,6 +133,7 @@ color:#0f0;
 		if ($val_array[$i][0] == 0 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
+			echo("svietidlo .$i");
 			echo("<br />");
 			echo("</div>");	
 		}
@@ -140,6 +141,7 @@ color:#0f0;
 		if ($val_array[$i][0] == 1 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
+			echo("svietidlo .$i");
 			echo("<br />");
 			echo("</div>");
 		}	 
