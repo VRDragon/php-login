@@ -32,6 +32,20 @@
 <meta charset="UTF-8">
 <title>Ethernet 16 Relay Control</title>
 <style>
+.box{
+background-color:#000;
+margin:50px auto;
+font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+border-radius:10px;
+border:2px solid #ccc;
+border-color:#0f0;
+padding:10px 40px 25px;
+margin-top:70px; 
+display:inline-block;
+position: relative;
+float:center;
+width: calc(25% - 10px);
+}
 .login{
 background-color:#000;
 margin:50px auto;
@@ -99,14 +113,14 @@ color:#0f0;
 	echo("<div class='login'>");
 	}*/
 		if ($val_array[$i][0] == 0 ) {
-			echo("<div class='login'>");
+			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 			echo("</div>");	
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
-			echo("<div class='login'>");
+			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 			echo("</div>");
