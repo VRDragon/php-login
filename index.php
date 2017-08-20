@@ -91,26 +91,30 @@ color:#0f0;
 	//for loop to read the value
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
-	if ($i == 0){
-	echo("<div class='login'>");
+//	if ($i == 0){
+/*	echo("<div class='login'>");
 	}
 	if ($i == 8){
 	echo("</div>");	
 	echo("<div class='login'>");
-	}
+	}*/
 		if ($val_array[$i][0] == 0 ) {
+			echo("<div class='login'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
+			echo("</div>");	
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
+			echo("<div class='login'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
+			echo("</div>");
 		}	 
 	}
-	if ($i == 15){
-	echo("</div>");	
-	}
+//	if ($i == 15){
+//	echo("</div>");	
+//	}
 ?> 
 <script src="script.js"></script>
 <div class="login">
