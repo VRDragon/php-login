@@ -43,6 +43,17 @@ cursor:pointer;
 border-radius:50px;
 margin-bottom:15px; 
 }
+button[name=chbt]{	
+width:100%;
+background-color:#ff0;
+color:#000;
+border:2px solid #fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:50px;
+margin-bottom:15px; 
+}
 button[name=logout]{	
 width:100%;
 background-color:#f00;
@@ -61,6 +72,7 @@ margin-bottom:15px;
         <div class="login">
 		<button name="chup" onclick="location.href='chup.php'" type="button">Change Username and password</button>
 		<button name="chip" onclick="location.href='chip.php'" type="button">Change IP adress</button>
+		<button name="chbt" onclick="location.href='chbt.php'" type="button">Change button name</button>
 		<button name="logout" onclick="location.href='logout.php'" type="button">Sign Out</button>
         </div>
 		</form>

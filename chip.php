@@ -94,6 +94,7 @@ margin-bottom:5px;
 		</div>
 		<div class="login">
 		<button name="chup" onclick="location.href='chup.php'" type="button">Change Username and password</button>
+		<button name="chup" onclick="location.href='chbt.php'" type="button">Change button name</button>
 		<button name="back" onclick="location.href='welcome.php'" type="button">Back</button>
 		<button name="logout" onclick="location.href='logout.php'" type="button">Sign Out</button>
 		</div>

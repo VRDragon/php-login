@@ -1,13 +1,10 @@
-
 <?php
    include('session.php');
     include('config.php');
         if($_SERVER["REQUEST_METHOD"] == "POST") {
-                $myusername = mysqli_real_escape_string($db,$_POST['username']);
-                $mypassword = mysqli_real_escape_string($db,$_POST['password']);
-                $sql = "UPDATE users SET usernme = '$myusername'  WHERE id=1";
-                $result = mysqli_query($db,$sql);
-                $sql = "UPDATE users SET password = '$mypassword' WHERE id=1";
+                $idm = mysqli_real_escape_string($db,$_POST['id']);
+                $namem = mysqli_real_escape_string($db,$_POST['name']);
+                $sql = "UPDATE users SET usernme = '$namem'  WHERE id='$idm'";
                 $result = mysqli_query($db,$sql);
         }
 ?>
@@ -71,6 +68,18 @@ border-radius:50px;
 margin-bottom:15px; 
 margin-top:20px; 
 }
+button[name=chup]{	
+width:100%;
+background-color:#f0f;
+color:#000;
+border:2px solid #fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:50px;
+margin-bottom:15px; 
+margin-top:20px; 
+}
 button[name=logout]{	
 width:100%;
 background-color:#f00;
@@ -92,18 +101,18 @@ color:#0f0;
 </head>
    <body background="background.jpg">
         <form action="" method="post" style="text-align:center;">
-        <h1 style="color:#0f0;">Welcome in change password and username<?php echo $login_session; ?><br />
+        <h1 style="color:#0f0;">Welcome in change button name<?php echo $login_session; ?><br />
 		<div class="login">
 		<form action="" method="post" style="text-align:center;">
-		<h4 align="left" >username</h4>
-        <input type = "text" name = "username" class = "box"/><br />
-        <h4 align="left" >password</h4>
-		<input type = "text" name = "password" class = "box" /><br/><br />
+		<h4 align="left" >ID</h4>
+        <input type = "text" name = "id" class = "box"/><br />
+        <h4 align="left" >name</h4>
+		<input type = "text" name = "name" class = "box" /><br/><br />
         <input type = "submit" value = " change "/><br />
 		</div>
 		<div class="login">
 		<button name="chip" onclick="location.href='chip.php'" type="button">Change IP adress</button>
-		<button name="chip" onclick="location.href='chbt.php'" type="button">Change button name</button>
+		<button name="chup" onclick="location.href='chup.php'" type="button">Change Username and password</button>
 		<button name="back" onclick="location.href='welcome.php'" type="button">Back</button>
 		<button name="logout" onclick="location.href='logout.php'" type="button">Sign Out</button>
 		</div>
