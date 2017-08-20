@@ -76,7 +76,13 @@ margin-bottom:15px;
 }
 h1
 {
-font-size:calc(120%);
+margin-bottom:1px;
+margin-top:1px;
+color:#0f0;
+}
+h5
+{
+font-size:calc(400%);
 margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
@@ -89,7 +95,7 @@ color:#0f0;
 }
 </style>
 </head>
-<h1 align="center">Ethernet 16 Relay Control</h1>
+<h5 align="center">Ethernet 16 Relay Control</h5>
 <body background="background.jpg">
 <?php
 	//$page = $_SERVER['PHP_SELF'];
