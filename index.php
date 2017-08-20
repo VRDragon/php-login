@@ -102,11 +102,7 @@ color:#0f0;
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
 		system("gpio mode ".$i." out");
-		exec ("gpio read ".$i, $val_array[$d], $return );
-	}
-	
-	for ( $i= 0; $i<16; $i++) {
-		echo("gpio ".$i."-".$val_array[$d] );
+		exec ("gpio read ".$i, $val_array[$i], $return );
 	}
 	
 	for ($i = 0; $i < 16; $i++) {
