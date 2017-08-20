@@ -29,7 +29,7 @@
 background-color:#000;
 margin:1px auto;
 color:#fff;
-font-size:calc(200%);
+font-size:calc(178%);
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
