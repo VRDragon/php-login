@@ -26,9 +26,11 @@ use login;
 //////////////////////////////////////////////////////////
 CREATE TABLE `users` ( `id` int(4) NOT NULL auto_increment,`usernme` varchar(65) NOT NULL default '',`password` varchar(65) NOT NULL default '',PRIMARY KEY (`id`) )
 CREATE TABLE `IP` ( `id` int(4) NOT NULL auto_increment,`IP_adrr` varchar(65) NOT NULL default '',PRIMARY KEY (`id`) );
+CREATE TABLE `button` ( `id` int(4) NOT NULL auto_increment,`name` varchar(65) NOT NULL default '',PRIMARY KEY (`id`) );
 //////////////////////////////////////////////////////////
   INSERT INTO users() VALUES(1,'admin','test');
-    INSERT INTO IP() VALUES(1,'192.168.1.52');
+  INSERT INTO IP() VALUES(1,'192.168.1.52');
+  INSERT INTO button() VALUES(1,'tlacidlo 1');
 //////////////////////////////////////////////////////////
   CREATE USER 'MY_USERNAME'@'localhost' IDENTIFIED BY 'MY_PASSWORD';
 //////////////////////////////////////////////////////////
