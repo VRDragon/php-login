@@ -87,6 +87,12 @@ margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
 }
+h4
+{
+margin-bottom:1px;
+margin-top:1px;
+color:#fff;
+}
 </style>
 </head>
 <body background="background.jpg">
@@ -133,7 +139,7 @@ color:#0f0;
 		if ($val_array[$i][0] == 0 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
-			echo("svietidlo .$i");
+			echo("<h4>svietidlo .$i </h4>");
 			echo("<br />");
 			echo("</div>");	
 		}
@@ -141,7 +147,7 @@ color:#0f0;
 		if ($val_array[$i][0] == 1 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
-			echo("svietidlo .$i");
+			echo("<h4>svietidlo .$i </h4>");
 			echo("<br />");
 			echo("</div>");
 		}	 
