@@ -101,7 +101,7 @@ color:#0f0;
 	//$page = $_SERVER['PHP_SELF'];
 	//$sec = "5";
 	//header("Refresh: $sec; url=$page");
-	$SQLCommand =  "SELECT name FROM button;";
+	$SQLCommand =  "SELECT name FROM button";
 	$result = mysql_query($db,$SQLCommand); // This line executes the MySQL query that you typed above
 	$button_array = array();
 	$index = 0;
