@@ -98,9 +98,20 @@ color:#0f0;
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	//this php script generate the first page in function of the file
 	$sql = "SELECT id, name FROM button";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	echo "id: " . $row["id"]. " - Name: " . $row["name"]."<br>";
+    
+	if ($result=mysqli_query($con,$sql))
+	{
+	// Fetch one and one row
+	while ($row=mysqli_fetch_row($result))
+		{
+		printf ("%s (%s)\n",$row[0],$row[1]);
+		}
+	// Free result set
+	mysqli_free_result($result);
+	}
+//	$result = mysqli_query($db,$sql);
+ //   $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+//	echo "id: " . $row["id"]. " - Name: " . $row["name"]."<br>";
     //while($row = $result->fetch_assoc()) {
     //    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
     //}
