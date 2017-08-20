@@ -88,11 +88,11 @@ color:#0f0;
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
 		if ($val_array[$i][0] == 0 ) {
-			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height="42" width="42" onclick='change_pin (".$i.");'/>");
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
-			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height="42" width="42" onclick='change_pin (".$i.");'/>");
 		}	 
 		
 	}
