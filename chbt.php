@@ -4,7 +4,7 @@
         if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $idm = mysqli_real_escape_string($db,$_POST['id']);
                 $namem = mysqli_real_escape_string($db,$_POST['name']);
-                $sql = "UPDATE users SET usernme = '$namem'  WHERE id='$idm'";
+                $sql = "UPDATE button SET name = '$namem'  WHERE id='$idm'";
                 $result = mysqli_query($db,$sql);
         }
 ?>
