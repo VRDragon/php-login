@@ -39,11 +39,10 @@ font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", seri
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
-padding:1px 60px 1px;
+padding:1px 20px 1px;
 display:inline-block;
 position: relative;
 float:left;
-width: calc(25% - 10px);
 }
 .login{
 background-color:#000;
@@ -58,7 +57,6 @@ display:inline-block;
 position: relative;
 float:left;
 width: calc(25% - 10px);
-height:400px;
 }
 input[type=text], input[type=password]{
 width:99%;
@@ -113,14 +111,14 @@ color:#0f0;
 	}
 		if ($val_array[$i][0] == 0 ) {
 			echo("<div class='box'>");
-			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 			echo("</div>");	
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
 			echo("<div class='box'>");
-			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 			echo("</div>");
 		}	 
