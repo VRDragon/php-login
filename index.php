@@ -101,13 +101,15 @@ color:#0f0;
 	//$page = $_SERVER['PHP_SELF'];
 	//$sec = "5";
 	//header("Refresh: $sec; url=$page");
-	$SQLCommand =  "SELECT name FROM button";
-	$result = mysql_query($db,$SQLCommand); // This line executes the MySQL query that you typed above
-	$button_array = array();
-	$index = 0;
-	while($row = mysql_fetch_assoc($result)){ // loop to store the data in an associative array.
-		$button_array[$index] = $row;
-		$index++;
+	mysql_connect("localhost", "root", "orangepi") or
+        die("Could not connect: " . mysql_error());
+	mysql_select_db("login");
+        $button_array = array();
+        $index = 0;
+	$result = mysql_query("SELECT name FROM button");
+	while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
+        $button_array[$index] = $row["name"];
+        $index++;
 	}
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	//this php script generate the first page in function of the file
