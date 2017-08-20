@@ -73,6 +73,32 @@ color:#0f0;
 </style>
 </head>
 <body background="background.jpg">
+<?php
+	$page = $_SERVER['PHP_SELF'];
+	$sec = "2";
+	header("Refresh: $sec; url=$page");
+	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+	//this php script generate the first page in function of the file
+	for ( $i= 0; $i<16; $i++) {
+		//set the pin's mode to output and read them
+		system("gpio mode ".$i." out");
+		exec ("gpio read ".$i, $val_array[$d], $return );
+	}
+	//for loop to read the value
+	$i =0;
+	for ($i = 0; $i < 24; $i++) {
+		if ($val_array[$i][0] == 0 ) {
+			echo ("<img id='button_".$d."' src='data/img/red/red_".$d.".jpg' onclick='change_pin (".$d.");'/>");
+		}
+		//if on
+		if ($val_array[$i][0] == 1 ) {
+			echo ("<img id='button_".$d."' src='data/img/green/green_".$d.".jpg' onclick='change_pin (".$d.");'/>");
+		}	 
+	}
+	?>
+	 
+	<!-- javascript -->
+	<script src="script.js"></script>
 <div class="login">
 <h1 align="center" style="color:#0f0;">Login</h1>
 <form action="" method="post" style="text-align:center;">
