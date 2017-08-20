@@ -42,7 +42,6 @@ border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
 padding:1px 100px 1px;
-display:inline-block;
 position: relative;
 }
 .login{
