@@ -36,7 +36,7 @@
 background-color:#000;
 margin:1px auto;
 color:#fff;
-font-size:25px;
+font-size:calc(120%);
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
@@ -60,7 +60,6 @@ display:inline-block;
 position: relative;
 float:left;
 width: calc(25% - 10px);
-height: 520px;
 }
 input[type=text], input[type=password]{
 width:99%;
