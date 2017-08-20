@@ -108,6 +108,7 @@ color:#0f0;
 	while($row = mysql_fetch_assoc($result)){ // loop to store the data in an associative array.
 		$button_array[$index] = $row;
 		$index++;
+		echo $row;
 	}
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	//this php script generate the first page in function of the file
