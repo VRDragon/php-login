@@ -101,8 +101,18 @@ color:#0f0;
 	//$page = $_SERVER['PHP_SELF'];
 	//$sec = "5";
 	//header("Refresh: $sec; url=$page");
+	$SQLCommand =  "SELECT name FROM button;"
+	$result = mysql_query($SQLCommand); // This line executes the MySQL query that you typed above
+	$yourArray = array(); // make a new array to hold all your data
+	$index = 0;
+	while($row = mysql_fetch_assoc($result)){ // loop to store the data in an associative array.
+		$button_array[$index] = $row;
+		$index++;
+	}
+	
+	
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-	$button_array = array("LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0");
+	//$button_array = array("LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0");
 	//this php script generate the first page in function of the file
 	$sql = "SELECT id, name FROM button";
 	
