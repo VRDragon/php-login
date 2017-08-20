@@ -29,13 +29,12 @@
 background-color:#000;
 margin:1px auto;
 color:#fff;
-font-size:calc(120%);
+font-size:calc(200%);
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
 padding:1px 50px 1px;
-position: relative;
 }
 .login{
 margin: calc(5%);
@@ -77,7 +76,6 @@ margin-bottom:15px;
 }
 h1
 {
-
 font-size:calc(120%);
 margin-bottom:1px;
 margin-top:1px;
