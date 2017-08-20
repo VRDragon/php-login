@@ -78,16 +78,15 @@ color:#0f0;
 	//$sec = "5";
 	//header("Refresh: $sec; url=$page");
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-	$piny = array(0,1,2,3,6,7,10,11,12,13,14,15,16,18,19,199);
 	//this php script generate the first page in function of the file
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
-		system("gpio mode ".$piny[$i]." out");
-		exec ("gpio read ".$piny[$i], $val_array[$d], $return );
+		system("gpio mode ".$i." out");
+		exec ("gpio read ".$i, $val_array[$d], $return );
 	}
 	//for loop to read the value
 	$i =0;
-	for ($i = 0; $i < 24; $i++) {
+	for ($i = 0; $i < 16; $i++) {
 		if ($val_array[$i][0] == 0 ) {
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' onclick='change_pin (".$i.");'/>");
 		}
@@ -95,6 +94,7 @@ color:#0f0;
 		if ($val_array[$i][0] == 1 ) {
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' onclick='change_pin (".$i.");'/>");
 		}	 
+		
 	}
 ?> 
 <script src="script.js"></script>
