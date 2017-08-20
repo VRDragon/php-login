@@ -3,20 +3,13 @@
    session_start();
 
    if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form
-
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']);
-
       $sql = "SELECT id FROM users WHERE usernme = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
-
       $count = mysqli_num_rows($result);
-
-      // If result matched $myusername and $mypassword, table row must be 1 row
-
       if($count == 1) {
          //session_register("myusername");
         $_SESSION['login_user'] = $myusername;
@@ -84,7 +77,8 @@ margin-bottom:15px;
 }
 h1
 {
-align="center"
+
+font-size:calc(120%);
 margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
@@ -97,7 +91,7 @@ color:#0f0;
 }
 </style>
 </head>
-<h1>Ethernet 16 Relay Control</h1>
+<h1 align="center">Ethernet 16 Relay Control</h1>
 <body background="background.jpg">
 <?php
 	//$page = $_SERVER['PHP_SELF'];
@@ -106,31 +100,17 @@ color:#0f0;
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	//this php script generate the first page in function of the file
 	$sql = "SELECT id, name FROM button";
-    
-	if ($result=mysqli_query($con,$sql))
-	{
-	// Fetch one and one row
-	while ($row=mysqli_fetch_row($result))
-		{
-		printf ("%s (%s)\n",$row[0],$row[1]);
-		}
-	// Free result set
-	mysqli_free_result($result);
-	}
-//	$result = mysqli_query($db,$sql);
- //   $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-//	echo "id: " . $row["id"]. " - Name: " . $row["name"]."<br>";
-    //while($row = $result->fetch_assoc()) {
-    //    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    //}
 	
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
 		system("gpio mode ".$i." out");
 		exec ("gpio read ".$i, $val_array[$d], $return );
 	}
-	//for loop to read the value
-	$i =0;
+	
+	for ( $i= 0; $i<16; $i++) {
+		echo("gpio ".$i."-".$val_array[$d] );
+	}
+	
 	for ($i = 0; $i < 16; $i++) {
 	if ($i == 0){
 	echo("<div class='login'>");
@@ -146,7 +126,6 @@ color:#0f0;
 			echo("<br />");
 			echo("</div>");	
 		}
-		//if on
 		if ($val_array[$i][0] == 1 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
