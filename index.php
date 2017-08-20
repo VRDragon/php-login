@@ -33,10 +33,7 @@
 <title>Ethernet 16 Relay Control</title>
 <style>
 .login{
-display:inline-block;
-position: relative;
 background-color:#000;
-width:360px;
 margin:50px auto;
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
@@ -44,6 +41,11 @@ border:2px solid #ccc;
 border-color:#0f0;
 padding:10px 40px 25px;
 margin-top:70px; 
+display:inline-block;
+position: relative;
+float:center;
+width: calc(25% - 10px);
+height:400px;
 }
 input[type=text], input[type=password]{
 width:99%;
@@ -72,15 +74,6 @@ margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
 }
-.box{
-    display:inline-block;
-    position: relative;
-    margin: 5px;
-    float:left;
-    width: calc(25% - 10px);
-    height:400px;
-    background-color: #000;
-}
 </style>
 </head>
 <body background="background.jpg">
@@ -99,19 +92,19 @@ color:#0f0;
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
 	if ($i == 0){
-	echo("<div class='box'>");
+	echo("<div class='login'>");
 	}
 	if ($i == 8){
 	echo("</div>");	
-	echo("<div class='box'>");
+	echo("<div class='login'>");
 	}
 		if ($val_array[$i][0] == 0 ) {
-			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='42' width='42' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
-			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='42' width='42' onclick='change_pin (".$i.");'/>");
+			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 		}	 
 	}
