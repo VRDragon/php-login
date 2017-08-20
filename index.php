@@ -74,16 +74,16 @@ color:#0f0;
 </head>
 <body background="background.jpg">
 <?php
-	$page = $_SERVER['PHP_SELF'];
-	$sec = "5";
-	header("Refresh: $sec; url=$page");
+	//$page = $_SERVER['PHP_SELF'];
+	//$sec = "5";
+	//header("Refresh: $sec; url=$page");
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	$piny = array(0,1,2,3,6,7,10,11,12,13,14,15,16,18,19,199);
 	//this php script generate the first page in function of the file
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
 		system("gpio mode ".$piny[$i]." out");
-		exec ("gpio read ".$i, $val_array[$d], $return );
+		exec ("gpio read ".$piny[$i], $val_array[$d], $return );
 	}
 	//for loop to read the value
 	$i =0;
