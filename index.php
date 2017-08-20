@@ -39,11 +39,10 @@ font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", seri
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
-padding:10px 40px 25px;
-margin-top:70px; 
+padding:1px 60px 1px;
 display:inline-block;
 position: relative;
-float:center;
+float:left;
 width: calc(25% - 10px);
 }
 .login{
@@ -57,7 +56,7 @@ padding:10px 40px 25px;
 margin-top:70px; 
 display:inline-block;
 position: relative;
-float:center;
+float:left;
 width: calc(25% - 10px);
 height:400px;
 }
@@ -131,6 +130,7 @@ color:#0f0;
 	}
 ?> 
 <script src="script.js"></script>
+</div>
 <div class="login">
 <h1 align="center" style="color:#0f0;">Login</h1>
 <form action="" method="post" style="text-align:center;">
