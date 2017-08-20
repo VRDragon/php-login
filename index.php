@@ -70,6 +70,15 @@ margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
 }
+.box{
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    float:left;
+    width: calc(25% - 10px);
+    height:400px;
+    background-color: lightgrey;
+}
 </style>
 </head>
 <body background="background.jpg">
@@ -88,11 +97,11 @@ color:#0f0;
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
 	if ($i == 0){
-	echo("<div class='login'>");
+	echo("<div class='box'>");
 	}
-	if ($i == 9){
+	if ($i == 8){
 	echo("</div>");	
-	echo("<div class='login'>");
+	echo("<div class='box'>");
 	}
 		if ($val_array[$i][0] == 0 ) {
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='42' width='42' onclick='change_pin (".$i.");'/>");
@@ -103,6 +112,9 @@ color:#0f0;
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' height='42' width='42' onclick='change_pin (".$i.");'/>");
 			echo("<br />");
 		}	 
+	}
+	if ($i == 15){
+	echo("</div>");	
 	}
 ?> 
 <script src="script.js"></script>
