@@ -42,7 +42,7 @@ cursor:pointer;
 border-radius:50px;
 margin-bottom:30px; 
 }
-h2
+h4
 {
 margin-bottom:1px;
 margin-top:1px;
@@ -68,7 +68,8 @@ padding:10px;
 font-size:20px;
 cursor:pointer;
 border-radius:50px;
-margin-bottom:15px; 
+margin-bottom:15px;
+margin-top:20px; 
 }
 button[name=logout]{	
 width:100%;
@@ -79,7 +80,7 @@ padding:10px;
 font-size:20px;
 cursor:pointer;
 border-radius:50px;
-margin-bottom:15px; 
+margin-bottom:5px; 
 }
 </style>
 </head>
@@ -87,7 +88,7 @@ margin-bottom:15px;
         <form action="" method="post" style="text-align:center;">
         <h1 style="color:#0f0;">Welcome in change IP adress<?php echo $login_session; ?><br />
 		<div class="login">
-		<h2>IP Adress</h2>
+		<h4>IP Adress</h4>
 		<input type = "text" name = "ipadrr" class = "box"/><br /><br />
         <input type = "submit" value = " change "/><br />
 		</div>
