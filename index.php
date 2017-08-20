@@ -35,7 +35,8 @@
 .box{
 background-color:#000;
 margin:1px auto;
-color:#000;
+color:#fff;
+font-size:20px;
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
@@ -83,6 +84,13 @@ cursor:pointer;
 border-radius:50px;
 margin-bottom:15px; 
 }
+h1
+{
+align="center"
+margin-bottom:1px;
+margin-top:1px;
+color:#0f0;
+}
 h2
 {
 margin-bottom:1px;
@@ -91,6 +99,7 @@ color:#0f0;
 }
 </style>
 </head>
+<h1>Ethernet 16 Relay Control</h1>
 <body background="background.jpg">
 <?php
 	//$page = $_SERVER['PHP_SELF'];
