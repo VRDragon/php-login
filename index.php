@@ -32,7 +32,7 @@
 <meta charset="UTF-8">
 <title>Ethernet 16 Relay Control</title>
 <style>
-.box2{
+.boxon{
 background-color:#0f0;
 margin:1px auto;
 color:#fff;
@@ -45,8 +45,8 @@ padding:1px 100px 1px;
 display:inline-block;
 position: relative;
 }
-.box1{
-background-color:#00f;
+.boxoff{
+background-color:#f00;
 margin:1px auto;
 color:#fff;
 font-size:30px;
@@ -155,7 +155,7 @@ color:#0f0;
 	echo("<div class='login'>");
 	}
 		if ($val_array[$i][0] == 0 ) {
-			echo("<div class='box1'>");
+			echo("<div class='boxoff'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
 			echo("svietidlo .$i ");
 			echo("<br />");
@@ -163,7 +163,7 @@ color:#0f0;
 		}
 		//if on
 		if ($val_array[$i][0] == 1 ) {
-			echo("<div class='box2' >");
+			echo("<div class='boxon' >");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
 			echo("svietidlo .$i ");
 			echo("<br />");
