@@ -72,7 +72,7 @@ color:#0f0;
 }
 </style>
 </head>
-<body style="background-color:#000;">
+<body background="background.jpg">
 <div class="login">
 <h1 align="center" style="color:#0f0;">Login</h1>
 <form action="" method="post" style="text-align:center;">
