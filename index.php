@@ -103,7 +103,7 @@ color:#0f0;
 	//header("Refresh: $sec; url=$page");
 	$SQLCommand =  "SELECT name FROM button;";
 	$result = mysql_query($SQLCommand); // This line executes the MySQL query that you typed above
-	$button_array = array("LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0","LED 0");
+	$button_array = array();
 	$index = 0;
 	while($row = mysql_fetch_assoc($result)){ // loop to store the data in an associative array.
 		$button_array[$index] = $row;
