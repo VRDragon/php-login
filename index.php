@@ -98,12 +98,12 @@ color:#0f0;
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 	//this php script generate the first page in function of the file
 	$sql = "SELECT id, name FROM button";
-    $result = $conn->query($sql);
-	if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    }
+    $result = mysqli_query($db,$sql);
+    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+	echo "id: " . $row["id"]. " - Name: " . $row["name"]."<br>";
+    //while($row = $result->fetch_assoc()) {
+    //    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    //}
 	
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
