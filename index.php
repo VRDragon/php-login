@@ -34,7 +34,7 @@
 <style>
 .box{
 background-color:#000;
-margin:50px auto;
+margin:1px auto;
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
@@ -105,13 +105,13 @@ color:#0f0;
 	//for loop to read the value
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
-//	if ($i == 0){
-/*	echo("<div class='login'>");
+	if ($i == 0){
+	echo("<div class='login'>");
 	}
 	if ($i == 8){
 	echo("</div>");	
 	echo("<div class='login'>");
-	}*/
+	}
 		if ($val_array[$i][0] == 0 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='84' width='84' onclick='change_pin (".$i.");'/>");
@@ -126,9 +126,9 @@ color:#0f0;
 			echo("</div>");
 		}	 
 	}
-//	if ($i == 15){
-//	echo("</div>");	
-//	}
+	if ($i == 15){
+	echo("</div>");	
+	}
 ?> 
 <script src="script.js"></script>
 <div class="login">
