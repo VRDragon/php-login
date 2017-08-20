@@ -36,12 +36,12 @@
 background-color:#000;
 margin:1px auto;
 color:#fff;
-font-size:30px;
+font-size:25px;
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
-padding:1px 100px 1px;
+padding:1px 50px 1px;
 position: relative;
 }
 .login{
@@ -60,7 +60,7 @@ display:inline-block;
 position: relative;
 float:left;
 width: calc(25% - 10px);
-height: 450px;
+height: 520px;
 }
 input[type=text], input[type=password]{
 width:99%;
