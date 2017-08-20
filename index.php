@@ -33,6 +33,8 @@
 <title>Ethernet 16 Relay Control</title>
 <style>
 .login{
+display:inline-block;
+position: relative;
 background-color:#000;
 width:360px;
 margin:50px auto;
@@ -77,7 +79,7 @@ color:#0f0;
     float:left;
     width: calc(25% - 10px);
     height:400px;
-    background-color: lightgrey;
+    background-color: #000;
 }
 </style>
 </head>
