@@ -45,13 +45,16 @@ position: relative;
 }
 .login{
 background-color:#000;
-margin:50px auto;
+margin: calc(5%);
+margin-right: calc(0.5%);
+margin-left: calc(0.5%);
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
 border-color:#0f0;
 padding:10px 40px 25px;
-margin-top:70px; 
+margin-right: calc(0.5%);
+margin-left: calc(0.5%);
 display:inline-block;
 position: relative;
 float:left;
