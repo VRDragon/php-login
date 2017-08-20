@@ -88,11 +88,11 @@ color:#0f0;
 	$i =0;
 	for ($i = 0; $i < 16; $i++) {
 	if ($i == 0){
-	echo("<div class="login">");
+	echo("<div class='login'>");
 	}
 	if ($i == 9){
 	echo("</div>");	
-	echo("<div class="login">");
+	echo("<div class='login'>");
 	}
 		if ($val_array[$i][0] == 0 ) {
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' height='42' width='42' onclick='change_pin (".$i.");'/>");
