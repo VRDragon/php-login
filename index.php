@@ -35,6 +35,7 @@
 .box{
 background-color:#000;
 margin:1px auto;
+color:#000;
 font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 border-radius:10px;
 border:2px solid #ccc;
@@ -51,6 +52,7 @@ font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", seri
 border-radius:10px;
 border:5px solid #ccc;
 border-color:#0f0;
+font-size:20px;
 padding:10px 40px 25px;
 margin-right: calc(0.5%);
 margin-left: calc(0.5%);
@@ -86,12 +88,6 @@ h2
 margin-bottom:1px;
 margin-top:1px;
 color:#0f0;
-}
-h4
-{
-margin-bottom:1px;
-margin-top:1px;
-color:#fff;
 }
 </style>
 </head>
@@ -139,7 +135,7 @@ color:#fff;
 		if ($val_array[$i][0] == 0 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/red/red_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
-			echo("<h4>svietidlo .$i </h4>");
+			echo("svietidlo .$i ");
 			echo("<br />");
 			echo("</div>");	
 		}
@@ -147,7 +143,7 @@ color:#fff;
 		if ($val_array[$i][0] == 1 ) {
 			echo("<div class='box'>");
 			echo ("<img id='button_".$i."' src='data/img/green/green_".$i.".jpg' align='left' height='50' width='50' onclick='change_pin (".$i.");'/>");
-			echo("<h4>svietidlo .$i </h4>");
+			echo("svietidlo .$i ");
 			echo("<br />");
 			echo("</div>");
 		}	 
