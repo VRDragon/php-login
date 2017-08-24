@@ -38,8 +38,6 @@ CREATE TABLE `button` ( `id` int(4) NOT NULL auto_increment,`name` varchar(65) N
 flush privileges;
 //////////////////////////////////////////////////////////
 ///////////////////koniec/////////////////////////////////
-  
-git clone https://github.com/VRDragon/html
-
 crontab -e
 @reboot sudo python /var/www/html/test.py
+@reboot sudo python /var/www/html/restart.py
