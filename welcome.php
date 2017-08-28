@@ -2,6 +2,9 @@
 <?php
    include('session.php');
     include('config.php');
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+                exec("reboot");
+        }
 ?>
 <html">
 
@@ -65,6 +68,17 @@ cursor:pointer;
 border-radius:50px;
 margin-bottom:15px; 
 }
+input[type=submit]{
+width:100%;
+background-color:#ff0;
+color:#000;
+border:2px solid #fff;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:50px;
+margin-bottom:5px; 
+}
 </style>
    <body background="background.jpg">
         <form action="" method="post" style="text-align:center;">
@@ -74,6 +88,9 @@ margin-bottom:15px;
 		<button name="chip" onclick="location.href='chip.php'" type="button">Change IP adress</button>
 		<button name="chbt" onclick="location.href='chbt.php'" type="button">Change button name</button>
 		<button name="logout" onclick="location.href='logout.php'" type="button">Sign Out</button>
+		<form action="" method="post" style="text-align:center;">
+		<input type = "text" name = "password" class = "box" /><br/><br />
+        <input type = "submit" value = " change "/><br />
         </div>
 		</form>
 
