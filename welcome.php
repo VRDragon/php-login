@@ -89,8 +89,7 @@ margin-bottom:5px;
 		<button name="chbt" onclick="location.href='chbt.php'" type="button">Change button name</button>
 		<button name="logout" onclick="location.href='logout.php'" type="button">Sign Out</button>
 		<form action="" method="post" style="text-align:center;">
-		<input type = "text" name = "password" class = "box" /><br/><br />
-        <input type = "submit" value = " change "/><br />
+        <input type = "submit" value = " reboot "/><br />
         </div>
 		</form>
 
