@@ -3,7 +3,7 @@
    include('session.php');
     include('config.php');
         if($_SERVER["REQUEST_METHOD"] == "POST") {
-                exec("reboot");
+                system("reboot");
         }
 ?>
 <html">
