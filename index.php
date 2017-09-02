@@ -112,12 +112,13 @@ color:#0f0;
         $index++;
 	}
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+	$pin_array = array(0,2,3,6,7,8,9,15,16,21,24,28,30,31,0,0);
 	//this php script generate the first page in function of the file
 	
 	for ( $i= 0; $i<16; $i++) {
 		//set the pin's mode to output and read them
-		system("gpio mode ".$i." out");
-		exec ("gpio read ".$i, $val_array[$i], $return );
+		system("gpio mode ".$pin_array[$i]." out");
+		exec ("gpio read ".$pin_array[$i], $val_array[$i], $return );
 	}
 	
 	for ($i = 0; $i < 16; $i++) {
