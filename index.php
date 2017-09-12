@@ -112,7 +112,7 @@ color:#0f0;
         $index++;
 	}
 	$val_array = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-	$pin_array = array(0,2,3,6,7,8,9,15,16,21,24,28,30,31,0,0);
+	$pin_array = array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
 	//this php script generate the first page in function of the file
 	
 	for ( $i= 0; $i<16; $i++) {
