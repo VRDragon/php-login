@@ -1,13 +1,10 @@
-﻿<?php
-//TheFreeElectron 2015, http://www.instructables.com/member/TheFreeElectron/
-//This page is requested by the JavaScript, it updates the pin's status and then print it
-//Getting and using values
+<?php
 if (isset ( $_GET["pic"] )) {
 	$pic = strip_tags ($_GET["pic"]);
 	
 	//test if value is a number
 	if ( (is_numeric($pic)) && ($pic <= 16) && ($pic >= 0) ) {
-		$pin_array = array(0,2,3,6,7,8,9,15,16,21,24,28,30,31,0,0);
+		$pin_array = array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
 		//set the gpio's mode to output		
 		system("gpio mode ".$pin_array[$pic]." out");
 		//reading pin's status
