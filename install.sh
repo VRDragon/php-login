@@ -1,6 +1,6 @@
 sudo apt-get update && sudo apt-get upgrade
-git clone https://github.com/zhaolei/WiringOP.git -b h3 
-cd WiringOP
+git clone https://github.com/xpertsavenue/WiringOP-Zero.git
+cd WiringOP-Zero
 chmod +x ./build
 sudo ./build
 sudo apt-get install apache2 php5 libapache2-mod-php5
