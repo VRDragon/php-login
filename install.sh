@@ -14,4 +14,3 @@ cd /var/www
 sudo rm -r html
 git clone https://github.com/VRDragon/php-login
 mv php-login html
-shutdown -h  now
