@@ -4,7 +4,7 @@ if (isset ( $_GET["pic"] )) {
 	
 	//test if value is a number
 	if ( (is_numeric($pic)) && ($pic <= 16) && ($pic >= 0) ) {
-		$pin_array = array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+		$pin_array = array(14,11,10,6,5,4,1,15,8,9,7,0,2,3,12,13);
 		//set the gpio's mode to output		
 		system("gpio mode ".$pin_array[$pic]." out");
 		//reading pin's status
