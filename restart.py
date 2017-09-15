@@ -5,10 +5,10 @@ from subprocess import call
 
 
 gpio.init()
-gpio.setcfg(port.PG7, gpio.INPUT)
+gpio.setcfg(port.16, gpio.INPUT)
 
 while 1:
-        if button&(gpio.input(port.PG7)):
+        if button&(gpio.input(port.16)):
 			try:
 				db = MySQLdb.connect("localhost","root","orangepi","login" )
 				cursor = db.cursor()
